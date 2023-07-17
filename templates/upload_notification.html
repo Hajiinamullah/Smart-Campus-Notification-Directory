@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Upload Notification</title>
+    <!-- Bootstrap CSS file -->
+             <link rel="stylesheet" href="/static/bootstrap-5.0.2/css/bootstrap.min.css">
+      <script src="/static/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet"  href="static/bootstrap-5.0.2/style.css">
+  </head>
+  <body>
+   <div class="container">
+    <h1 class="text-center">Admin Dashboard</h1>
+    <!-- Your HTML code here -->
+  </div>
+    <div class="container">
+      <h2 class="mt-5">Upload Notification</h2>
+      <form action="{{ url_for('upload_notification') }}" method="post" enctype="multipart/form-data">
+
+        <div class="mb-3">
+          <label class="form-label">ID</label>
+          <input type="text" name="id" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Subject</label>
+          <input type="text" name="subject" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Date</label>
+          <input type="date" name="date" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Image:</label>
+          <input type="file" name="image" accept="image/*" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+    <!-- Bootstrap JS files -->
+  </body>
+</html>

@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>website</title>
+       <link rel="stylesheet" href="/static/bootstrap-5.0.2/css/bootstrap.min.css">
+    <script src="/static/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"  href="static/bootstrap-5.0.2/style.css">
+
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+      <div class="container">
+        <a class="navbar-brand " href="#"><img src="static/images/logo1.png" style="width: 210px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link menus" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+<!--              <a class="nav-link menus" href="templates/about.html">About</a>-->
+              <a class="nav-link menus" href="{{ url_for('about') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active menus" href="{{ url_for('notification') }}">Notification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menus" href="{{ url_for('schemeofstudy') }}">Scheme of Study</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logut menus" href="{{ url_for('login') }}">Account</a>
+            </li>
+          </ul>
+            <li class="nav-item">
+              <a class="nav-link logut menus" href="{{ url_for('contact') }}">contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/img1.jpg" class="slide d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/img2.jpg" class=" slide d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/img3.jpg" class=" slide d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 ">
+      <div class="card border-0">
+        <img src="static/images/notif.jpg" class="card-img-top rounded-circle card-image ml-5" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title card-text1">Notifications</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet quam eu leo sollicitudin elementum. </p>
+            <button class="btn btn-primary btn-lg btn-block card-bn">Notification</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="card border-0">
+        <img src="static/images/sos.jpg" class="card-img-top rounded-circle card-image" alt="Image 2">
+        <div class="card-body">
+          <h5 class="card-title card-text1 ">Scheme of Study</h5>
+          <p class="card-text">Sed non metus ac neque ullamcorper eleifend. Mauris sed sapien auctor, vehicula metus non, commodo velit.</p>
+              <button class="btn btn-primary btn-lg btn-block card-bn">Scheme of study</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">contact us</h5>
+         <ul class="list-unstyled mb-0">
+          <li>
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <a href="#!" class="text-dark">University of education<br>Lahore</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:+1234567890" class="text-dark">+92 42 99262207</a>
+          </li>
+           <li>
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:info@example.com" class="text-dark">info@example.com</a>
+          </li>
+         </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Home</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">About</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Notification</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Scheme of Study</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Social Media</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Twitter</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(249, 212, 11, 0.66);">
+    &copy; 2023 smart campus notification directory
+  </div>
+</footer>
+
+</body>
+</html>

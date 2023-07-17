@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+       <link rel="stylesheet" href="/static/bootstrap-5.0.2/css/bootstrap.min.css">
+    <script src="/static/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"  href="static/bootstrap-5.0.2/style.css">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+      <div class="container">
+        <a class="navbar-brand " href="#"><img src="static/images/logo1.png" style="width: 210px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link menus" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+<!--              <a class="nav-link menus" href="templates/about.html">About</a>-->
+              <a class="nav-link menus" href="{{ url_for('about') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active menus" href="{{ url_for('notification') }}">Notification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menus" href="{{ url_for('schemeofstudy') }}">Scheme of Study</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logut menus" href="{{ url_for('login') }}">Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Our Website</h2>
+        <p class="lead">Our website is designed to provide easy access to all the latest notifications from the University of Education. Whether you are a student, faculty member, or staff, you can find all the latest news and updates regarding the university on this platform.</p>
+        <p class="lead">We understand that staying informed about the latest university updates can be a challenge, especially with the fast-paced nature of university life. That's why we've made it our mission to keep our platform up-to-date with the latest news and information from the university, so you can stay informed and make the most of your time at the university.</p>
+        <p class="lead">Our website is easy to navigate and user-friendly, allowing you to quickly find the information you need. In addition to the latest university notifications, we have also included a comprehensive scheme of study that contains all the necessary information about each semester. Students can easily access their course codes, subject names, semester information, and credit hours, making it easier to plan their academic schedules.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Our Mission</h2>
+        <p class="lead">Our mission is to make university life easier for students by providing them with a one-stop solution for all their academic needs. We believe that education should be accessible to everyone, and our website aims to bridge the gap between students and their academic goals.</p>
+        <p class="lead">We understand that university life can be overwhelming, especially for new students who are still adjusting to the academic environment. Our platform is designed to provide students with the resources they need to succeed, including access to the latest university notifications and a comprehensive scheme of study.</p>
+        <p class="lead">We are committed to providing a user-friendly platform that is accessible to everyone, regardless of their technical skills. Whether you are a tech-savvy student or someone who is new to using online resources, our website is designed to be easy to use and navigate.</p>
+      </div>
+    </div>
+  </div>
+<footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">contact us</h5>
+         <ul class="list-unstyled mb-0">
+          <li>
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <a href="#!" class="text-dark">University of education<br>Lahore</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:+1234567890" class="text-dark">+92 42 99262207</a>
+          </li>
+           <li>
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:info@example.com" class="text-dark">info@example.com</a>
+          </li>
+         </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Home</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">About</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Notification</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Scheme of Study</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Social Media</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Twitter</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(249, 212, 11, 0.66);">
+    &copy; 2023 smart campus notification directory
+  </div>
+</footer>
+</body>
+
+
+</html>

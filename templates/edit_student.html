@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit User</title>
+          <link rel="stylesheet" href="/static/bootstrap-5.0.2/css/bootstrap.min.css">
+      <script src="/static/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet"  href="static/bootstrap-5.0.2/style.css">
+  </head>
+  <body>
+ <div class="container">
+    <h1 class="text-center">Faculty Dashboard</h1>
+    <!-- Your HTML code here -->
+  </div>
+    <div class="container">
+      <h2>Edit User</h2>
+      <form method="POST" action="{{ url_for('edit_student', table=table, id=student[0]) }}">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" value="{{ student[1] }}" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" value="{{ student[2] }}" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" value="{{ student[3] }}" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="static/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

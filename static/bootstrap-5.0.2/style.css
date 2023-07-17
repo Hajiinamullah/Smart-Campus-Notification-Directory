@@ -1,0 +1,33 @@
+<style>
+.logo-image {
+  width: 60px !important; /* adjust to desired width */
+  height: auto; /* adjust to maintain aspect ratio */
+d
+}
+.menus {
+margin-left:40px;
+font-size:25px;
+}
+.slide{
+height:400px;
+width:100%;
+}
+.card-image{
+width:100px;
+height:100px;
+margin-left:40%;
+}
+.card-text1{
+font-size: 28px;
+margin-left: 33%;
+}
+.card-bn{
+margin-left:35%;
+}
+.bg-light {
+  background-color: #dfdfdb !important;
+}
+.mt-3 {
+  margin-top: 0rem !important;
+}
+</style>
